@@ -883,7 +883,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </supportedProjectTypes>
         </configuration>
       </plugin>
-      <plugin>
+      <!-- plugin>
         <groupId>org.revapi</groupId>
         <artifactId>revapi-maven-plugin</artifactId>
         <executions>
@@ -893,13 +893,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </goals>
             <configuration>
               <analysisConfigurationFiles>
-                <!-- Present at the root of each module that doesn't skip this goal -->
+                <!- Present at the root of each module that doesn't skip this goal ->
                 <analysisConfigurationFile>revapi.json</analysisConfigurationFile>
               </analysisConfigurationFiles>
             </configuration>
           </execution>
         </executions>
-      </plugin>
+      </plugin -->
     </plugins>
   </build>
   <profiles>
@@ -938,9 +938,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </profile>
   </profiles>
   <distributionManagement>
-    <repository>
+    <!-- repository>
       <id>ossrh</id>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository -->
+    <repository>
+      <id>yuzer</id>
+      <url>https://maven.pkg.github.com/yuzer-software/yuzer-boot</url>
     </repository>
   </distributionManagement>
   <licenses>

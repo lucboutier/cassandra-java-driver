@@ -23,15 +23,17 @@
     <artifactId>java-driver-parent</artifactId>
     <version>4.15.0</version>
   </parent>
+  <groupId>fr.yuzer</groupId>
   <artifactId>java-driver-core</artifactId>
+  <version>4.15.1</version>
   <packaging>bundle</packaging>
   <name>DataStax Java driver for Apache Cassandra(R) - core</name>
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>${project.groupId}</groupId>
+        <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-bom</artifactId>
-        <version>${project.version}</version>
+        <version>4.15.0</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
